@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chetan Sharma - 3D Animator Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: white;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #bg-video {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 120%; height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .overlay {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+    }
+    .overlay h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .overlay p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1b1b1b;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <iframe id="bg-video" src="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1&mute=1&loop=1&playlist=ScMzIvxBSi4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div class="overlay">
+      <h1>Hi, I'm Chetan Sharma</h1>
+      <p>3D Animator & Motion Designer</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I’m a passionate 3D animator focused on storytelling through motion. I specialize in product animation, character rigging, and motion graphics. I'm available for freelance work and collaboration.</p>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">3D Animation</div>
+      <div class="card">Motion Graphics</div>
+      <div class="card">Product Visualization</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="card">
+        <p>Project 1</p>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="card">
+        <p>Project 2</p>
+        <img src="https://source.unsplash.com/random/300x200?nature" alt="Demo Project" style="width:100%;border-radius:8px;" />
+      </div>
+      <div class="card">
+        <p>Project 3</p>
+        <img src="https://source.unsplash.com/random/300x200?technology" alt="Demo Project" style="width:100%;border-radius:8px;" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Chetan Sharma. Portfolio created for demo.
+  </footer>
+</body>
+</html>
